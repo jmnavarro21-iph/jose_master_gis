@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5</title>
+        <style>
+            .formulario{
+                border-style: solid;
+                max-width: 700px;
+                margin: auto;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .cajon{
+                background-color: blue;
+                font-size: 25px;
+                color: white;
+                max-width: 250px;
+                margin-left: 350px;
+            }
+            .nada{
+                margin:auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="formulario">
+            <div>
+                <table class="nada">
+                    <tr>
+                        <td>
+                            <label for="name">Nombre:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="30">
+                        </td>           
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email" required minlength="4" maxlength="8" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cometarios">Comentarios:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="comentarios" name="comentarios" required minlength="0" maxlength="150" size="30">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <button class="cajon" type="button" onclick="alert('DATOS ENVIADOS A NINGUN SITIO')">Enviar</button>
+            </div>
+        </div>
+        
+    </body>
+</html>

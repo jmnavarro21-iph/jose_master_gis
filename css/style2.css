@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    color:white;
+    
+}
+.flex-container > div {
+    background-color: black;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin: 0px;
+    padding: 20px;
+}
+div:hover{
+    color: yellow;
+}
