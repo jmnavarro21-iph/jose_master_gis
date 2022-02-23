@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 12</title>
+    </head>
+    <body>
+        <h1> Clases </h1>
+        <p id="demo"></p>
+        <script> 
+        class Cuadrados{
+            constructor(lado){
+                this.lado=lado;
+            }
+        }
+        const pequeno = new Cuadrados(0.02);
+        const mediano = new Cuadrados(0.05);
+        const grande = new Cuadrados (0.10);
+        const areaPequeno= pequeno.lado*pequeno.lado
+        const perimetroPequeno= pequeno.lado*4
+        console.log ('el area del cuadrado pequeño es:',areaPequeno) 
+        console.log ('el perimetro del cuadrado pequeño es:',perimetroPequeno) 
+        const areaMediano= mediano.lado*mediano.lado
+        const perimetroMediano= mediano.lado*4
+        console.log ('el area del cuadrado mediano es:',areaMediano) 
+        console.log ('el perimetro del cuadrado mediano es:',perimetroMediano) 
+        const areaGrande= grande.lado*grande.lado
+        const perimetroGrande= grande.lado*4
+        console.log ('el area del cuadrado grande es:',areaGrande) 
+        console.log ('el perimetro del cuadrado grande es:',perimetroGrande) 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 10</title>
+    </head>
+    <body>
+        <h1>Meses del Año</h1>
+        <script> 
+        const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        console.log(meses);
+        const largos = meses.filter (function(meses){
+            return meses.length>6
+        });
+        const largosM=[];
+        let  contador=0;
+        for( var mes of largos){
+            var mesI= mes.toUpperCase();
+            largosM.push(mesI)
+            contador = contador + 1;
+        }
+        console.log(largos);
+        console.log(largosM);
+        console.log(contador);
+        </script>
+    </body>
+</html>

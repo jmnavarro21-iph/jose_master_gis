@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CV Jose Maria Navarro </title>
+        <style>
+            .cv{
+                display: flex;
+            }
+            .texto{
+                border:1px;
+                text-align:justify;
+                padding-left: 20px;
+                width: 250px;
+            }
+            .boton{
+                border-radius: 32px;
+                background-color: rgb(112, 165, 165);
+                color: white;
+                width: 250px;
+                height: 50px;
+                font-size: large;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h1{
+                color:rgb(85, 139, 139);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 100px;
+            }
+            h2{
+                color:rgb(172, 172, 172);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 100px;
+            }
+ 
+            .imagen{
+                padding-left: 20px;
+                width: 350px;
+                height: 50px;
+            }
+            .body{
+               width: 150px
+            }
+        </style>
+    </head>
+    <body>
+        <h1>José María Navarro Rodríguez</h1>
+        <h2>Consultor de operaciones Geomaticas</h2>
+        <div class="cv">
+            <div class="menu">
+                <button class="boton" onclick="location.reload()" > Acerca de mi </button> 
+                <br>
+                <button class="boton" id="formacion" onclick="formacion()"> Formación </button>
+                <br>
+                <button class="boton" onclick="experLabo()"> Experiencia profesional </button> 
+                <br>
+                <button class="boton" onclick="aptitud()"> Aptitudes </button> 
+                <br>
+                <button class="boton" onclick="idiomas()"> Idiomas </button> 
+            </div>
+            <div class="texto">
+                <p id="textos">
+                    Apasionado de la geomatica y topografia con mas de 9 años de experiencia profesional. <br>
+                    Ubicado en Huelva desde 2015 donde desarrollo labores de consultor de operaciones geomaticas.<br> 
+                    Mi principal desepeño es la adquisicion de datos, procesado y generación de entregables de alta calidad relacionados con la cartografia digital. <br>
+                    Además estoy complementado mi perfil GIS con la formación Master GIS  online 2021 impartida por ESRI. 
+                </p>
+            </div>
+            <div class="imagen">
+                <p>
+                    <img src="portada.jpeg">
+                </p>
+                
+            </div>
+        </div>
+        <script>
+        const titulos = ['-Ingeniero Tecnico en Topografía. Universidad de Jaén. 2013<br>-Grado en Ingenieria Geomatica y Topografica. Universidad de Jaén.2014<br>-Master en Energias Renovables. Universidad de Jaén.2015<br>-Master en Sistemas de información geografica. UCAM.2021'];  
+        const experienciaLaboral=['-Inrpo Huelva S.L. 2015-Actualidad<br>-Ayuntamiento de Linares 2014-2015']
+        const idiom=['Inges. Nivel B1. Certificado: Cambridge Preliminary Test.']
+        const aptiudes2 =['-Piloto Drone. <br>-Cursos de QGIS, REVIT, ARCGIS y  PRL.']
+        function formacion(){
+            document.getElementById("textos").innerHTML=titulos;
+        }
+        function experLabo(){
+            document.getElementById("textos").innerHTML=experienciaLaboral;
+        }
+        function idiomas(){
+            document.getElementById("textos").innerHTML=idiom;
+        }
+        function aptitud(){
+            document.getElementById("textos").innerHTML=aptiudes2; 
+        }
+        
+        </script>
+    </body>
+</html>

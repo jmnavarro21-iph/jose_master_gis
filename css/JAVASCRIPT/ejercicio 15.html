@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 15</title>
+    </head>
+    <body>      
+        <h1>Eventos</h1>
+
+        <p>Haz que cuando se haga click sobre el botón “Guardar”, salté un alert con un mensaje de guardado.</p>
+        
+        <button id="guardar">Guardar</button>
+        
+        <br>
+        
+        <br>
+        
+        <p>Cuando hagamos foco sobre este input se pondrá de color amarillo y cuando se lo quitemos cambiará de color</p>
+        
+        <label>Nombre</label>
+        
+        <input  type=”text” id="colores"/>
+        
+        <br>
+        
+        <br>
+        
+        <p>Dependiendo si escribamos una vocal o una consonante el contenido del input aparecerá de distinto color</p>
+        
+        <label>Escribe una letra</label>
+        
+        <input  type=”text” id="texto"/>
+    </body>
+    <script> 
+    
+    document.getElementById("guardar").addEventListener("click",alertaFuncion);
+    document.getElementById("colores").addEventListener("focus",cambiocolor);
+    document.getElementById("colores").addEventListener("focusout",retornoColor);
+    document.getElementById("texto").addEventListener("focus",analiza)
+    
+    function alertaFuncion(){
+        alert('¡Enhoranbuena has guardado tus datos!');
+    }
+    function cambiocolor(){
+        document.getElementById("colores").style.backgroundColor="yellow";
+    }
+    function retornoColor(){
+        document.getElementById("colores").style.backgroundColor="white";
+    }
+    function textoColor(){
+        document.getElementById("texto").style.color="orange";
+    }  
+    let textof = document.getElementById("texto").value;
+    let resultado = textof.includes("a","e","i","o","u");
+    function analiza(){
+        if (resultado==true){
+            textoColor();
+        }
+    }
+    </script>
+</html>
